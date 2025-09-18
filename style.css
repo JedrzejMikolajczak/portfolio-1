@@ -1,0 +1,286 @@
+/* Reset i font */
+body {
+  margin: 0;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Nawigacja */
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #178582;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+ul li:hover {
+  color: #28dcd6;
+}
+#przerwa { color: #c1d5d4; }
+
+.user-name {
+  font-size: 1.2em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.circle-menu {
+  border-radius: 50%;
+  background-color: #28dcd6;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+}
+
+/* Sekcja główna */
+.main-content {
+  text-align: center;
+  margin-top: 150px;
+}
+.typewriter h1 {
+  font-size: 3em;
+  font-weight: 600;
+  color: #6E6E6E;		
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .05em;
+  animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+.subtitle {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #999;
+}
+.line {
+  margin-top: 80px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 3px;
+  background-color: #eee;
+  border-radius: 8px;
+}
+
+/* Typing efekt */
+@keyframes typing { from { width: 0 } to { width: 100% } }
+@keyframes blink-caret { from, to { border-color: transparent } 50% { border-color: orange; } }
+
+/* O mnie */
+.about {
+  text-align: center;
+  padding: 100px 20px;
+}
+#about-me-h1 {
+  font-size: 3em;
+  color: #6E6E6E;
+  margin-bottom: 50px;
+}
+.about-me-card {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  font-size: 1.1em;
+  line-height: 1.8;
+}
+
+/* Projekty */
+.projects {
+  text-align: center;
+  height: 700px;
+  padding: 100px 20px;
+  background: #f9f9f9;
+}
+.section-title {
+  font-size: 3em;
+  color: #6E6E6E;
+  margin-bottom: 60px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.project-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.slideshow {
+  position: relative;
+  width: 400px;
+  margin: 0 auto;
+  padding-bottom:180px;
+  height: 320px;
+  overflow: visible;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 490px;
+  height: 400px;
+  opacity: 0;
+  transform: translateX(-50%) scale(0.8);
+  filter: blur(4px) grayscale(40%);
+  transition: 
+    opacity 0.5s, 
+    transform 0.5s, 
+    filter 0.5s;
+  z-index: 1;
+  pointer-events: none;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-align: center;
+  padding: 10px 0;
+}
+
+.slide.active {
+  opacity: 1;
+  filter: none;
+  transform: translateX(-50%) scale(1);
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.slide.prev {
+  opacity: 1;
+  transform: translateX(-170%) scale(0.8);
+  z-index: 2;
+}
+
+.slide.next {
+  opacity: 1;
+  transform: translateX(70%) scale(0.8);
+  z-index: 2;
+}
+.slide img {
+  width: 90%;
+  margin-inline: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.slide p {
+  margin-top: 20px;
+  font-size: 1.1em;
+  color: #333;
+}
+
+/* Kontakt */
+.contact {
+  text-align: center;
+  padding: 100px 20px;
+}
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #28dcd6;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+.contact-btn:hover {
+  background: #178582;
+}
+
+
+/* Stopka */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f5f5f5;
+  font-size: 0.9em;
+  color: #666;
+}
+.lang-images{
+    margin-top: 100px;
+    gap: 100px;
+    display: block;
+}
+i{
+    padding-top: 100px;
+    padding-inline: 100px;
+    display: inline-block;
+    font-size: 7em;
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Github icon in slider */
+.bi-github{
+  color: #333;
+  transition: 0.3s;
+}
+.bi-github:hover{
+  color: #666;
+  transform: translateY(-5px);
+
+}
+a{
+    text-decoration: none;
+}
+
+.bi-window-plus{
+  color: #333;
+  transition: 0.3s;
+}
+.bi-window-plus:hover{
+  color: #666;
+  transform: translateY(-5px);
+}
+.icons-in-slider{
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20%;
+}

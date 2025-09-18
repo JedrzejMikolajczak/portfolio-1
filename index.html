@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio – Jędrzej Mikołajczak</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Nawigacja -->
+    <div class="menu-container">
+    <div class="user-name">
+        <div class="circle-menu"></div>
+        Jędrzej Mikołajczak
+    </div>
+    <ul>
+        <li>Strona główna</li><p id="przerwa">|</p>
+        <li id="about-btn">O mnie</li><p id="przerwa">|</p>
+        <li id="project-btn">Projekty</li><p id="przerwa">|</p>
+        <li id="kontakt-btn">Kontakt</li>
+    </ul>
+    </div>
+
+  <!-- Sekcja powitalna -->
+<div class="main-content">
+    <div class="typewriter">
+      <h1>Cześć, nazywam się Jędrzej!</h1>
+    </div>
+    <p class="subtitle">Web | UI/UX Developer </p>
+    <div class="line"></div>
+</div>
+
+  <!-- Sekcja O mnie -->
+<div class="about">
+    <h1 id="about-me-h1">O mnie</h1>
+    <div class="about-me-card">
+        <p>
+        Jestem pasjonatem tworzenia nowoczesnych stron i aplikacji webowych. 
+        Specjalizuję się w tworzeniu stron internetowych w
+        <strong>HTML, CSS, JavaScript</strong>.  
+        Uwielbiam łączyć estetykę z funkcjonalnością.
+        </p>
+    </div>
+        <div class="skills">
+            <i class="devicon-html5-plain colored pulse"></i>
+            <i class="devicon-css3-plain colored pulse"></i>
+            <i class="devicon-javascript-plain colored pulse"></i>
+        </div>
+</div>
+
+  <!-- Sekcja Projekty -->
+<div class="projects">
+    <h1 class="section-title">Moje Projekty</h1>
+    <div class="slideshow">
+        <div class="slide active">
+            <p>Witryna sklepu w python FLASK</p>
+            <img src="images/img1.png" alt="Projekt 1">
+            <p>Integracja bazy danych z kontami, koszyk, zamówienia.</p>
+            <div class="icons-in-slider">
+                <a href="https://www.w3schools.com/" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                </svg>
+            </a>
+            <a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-window-plus" viewBox="0 0 16 16">
+                    <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                    <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                </svg>
+            </a>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="img/projekt2.jpg" alt="Projekt 2">
+            <p>Aplikacja webowa pobierająca dane z API i prezentująca prognozę.</p>
+        </div>
+        <div class="slide">
+            <img src="img/projekt3.jpg" alt="Projekt 3">
+            <p>Projekt sklepu internetowego z intuicyjnym interfejsem.</p>
+        </div>
+    </div>
+    <p id="opis-slider">Do wszystkich projektów znajduje się link do repozytorium github oraz pokazowej strony!</p>
+</div>
+
+  <!-- Sekcja Kontakt -->
+<div class="contact">
+    <h1 class="section-title">Kontakt</h1>
+    <p>Chcesz ze mną współpracować? Napisz do mnie!</p>
+    <a href="mailto:twojemail@gmail.com" class="contact-btn">Napisz maila</a>
+</div>
+
+  <!-- Stopka -->
+<footer>
+    <p>© 2025 Jędrzej Mikołajczak. Wszelkie prawa zastrzeżone.</p>
+</footer>
+</body>
+</html>
