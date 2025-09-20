@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,15 +17,16 @@
         Jędrzej Mikołajczak
     </div>
     <ul>
-        <li>Strona główna</li><p id="przerwa">|</p>
-        <li id="about-btn">O mnie</li><p id="przerwa">|</p>
-        <li id="project-btn">Projekty</li><p id="przerwa">|</p>
-        <li id="kontakt-btn">Kontakt</li>
+        <li><a href="#home">Strona główna</a></li><p id="przerwa">|</p>
+        <li id="about-btn"><a href="#about">O mnie</a></li><p id="przerwa">|</p>
+        <li id="project-btn"><a href="#projects">Projekty</a></li><p id="przerwa">|</p>
+        <li id="kontakt-btn"><a href="#contact">Kontakt</a></li>
     </ul>
+
     </div>
 
   <!-- Sekcja powitalna -->
-<div class="main-content reveal fade-up">
+<div id="home" class="main-content reveal fade-up">
     <div class="typewriter">
       <h1>Cześć, nazywam się Jędrzej!</h1>
     </div>
@@ -35,7 +35,7 @@
 </div>
 
   <!-- Sekcja O mnie -->
-<div class="about reveal fade-left">
+<div id="about" class="about reveal fade-left">
     <h1 id="about-me-h1">O mnie</h1>
     <div class="about-me-card">
         <p>
@@ -53,7 +53,7 @@
 </div>
 
   <!-- Sekcja Projekty -->
-<div class="projects reveal fade-up">
+<div id="projects" class="projects reveal fade-up">
     <h1 class="section-title">Moje Projekty</h1>
     <div class="slideshow">
         <div class="slide active">
@@ -88,7 +88,7 @@
 </div>
 
   <!-- Sekcja Kontakt -->
-<div class="contact reveal fade-right">
+<div id="contact" class="contact reveal fade-right">
     <h1 class="section-title">Kontakt</h1>
     <p>Chcesz ze mną współpracować? Napisz do mnie!</p>
     <a href="mailto:twojemail@gmail.com" class="contact-btn">Napisz maila</a>
@@ -98,5 +98,6 @@
 <footer>
     <p>© 2025 Jędrzej Mikołajczak. Wszelkie prawa zastrzeżone.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
