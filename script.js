@@ -32,6 +32,28 @@ const reveals = document.querySelectorAll(".reveal");const observer = new Inters
 
   reveals.forEach(el => observer.observe(el));
 })
+document.addEventListener("DOMContentLoaded", function() {
+  const sections = document.querySelectorAll("section, .main-content, .about, .projects, .contact");
+  const navLinks = document.querySelectorAll("ul li a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      const sectionHeight = section.clientHeight;
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.parentElement.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.parentElement.classList.add("active");
+      }
+    });
+  });
+});
 
 
 
