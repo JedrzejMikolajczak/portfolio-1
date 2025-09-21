@@ -270,7 +270,7 @@ ul li.active a::after {
 }
 
 .slide p {
-  margin-top: 15px;
+  margin: 10px;
   font-size: 1.2em;
   font-weight: 500;
   color: #e4e4e7;
