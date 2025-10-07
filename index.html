@@ -1,117 +1,255 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio – Jędrzej Mikołajczak</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Jędrzej Mikołajczak</title>
+
+  <meta name="description" content="Portfolio Jędrzeja Mikołajczaka – Web & UI/UX Developer. Projekty, umiejętności i kontakt." />
+  <link rel="canonical" href="https://twojadomena.pl/" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="menu-container">
-    <div class="user-name">
-        <div class="circle-menu"></div>
-        Jędrzej Mikołajczak
-    </div>
-    <ul>
-        <li><a href="#home">Strona główna</a></li><p id="przerwa">|</p>
-        <li id="about-btn"><a href="#about">O mnie</a></li><p id="przerwa">|</p>
-        <li id="project-btn"><a href="#projects">Projekty</a></li><p id="przerwa">|</p>
-        <li id="kontakt-btn"><a href="#contact">Kontakt</a></li>
-    </ul>
+  <div class="bg-deco bg-deco--a" aria-hidden="true"></div>
+  <div class="bg-deco bg-deco--b" aria-hidden="true"></div>
 
+  <a class="skip-link" href="#home">Pomiń do treści</a>
+
+  <!-- Header / Nawigacja -->
+  <header class="menu-container" role="banner">
+    <div class="brand">
+      <div class="circle-menu" aria-hidden="true"></div>
+      <span class="user-name">Jędrzej Mikołajczak</span>
     </div>
 
-<div id="home" class="main-content reveal fade-up">
-    <div class="typewriter">
-      <h1>Cześć, nazywam się Jędrzej!</h1>
-    </div>
-    <p class="subtitle">Web | UI/UX Developer </p>
-    <div class="line"></div>
-</div>
+    <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Otwórz menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
 
-<div id="about" class="about reveal fade-left">
-    <h1 id="about-me-h1">O mnie</h1>
-    <div class="about-me-card">
-        <p>
-        Jestem pasjonatem tworzenia nowoczesnych stron i aplikacji webowych. 
-        Specjalizuję się w tworzeniu stron internetowych w
-        <strong>HTML, CSS, JavaScript</strong>.  
-        Uwielbiam łączyć estetykę z funkcjonalnością.
+    <nav id="primary-nav" class="primary-nav" aria-label="Główna nawigacja">
+      <ul>
+        <li class="nav-item"><a href="#home">Strona główna</a></li>
+        <li class="nav-item"><a href="#about">O mnie</a></li>
+        <li class="nav-item"><a href="#projects">Projekty</a></li>
+        <li class="nav-item"><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <main id="home" class="section hero" tabindex="-1">
+    <div class="container hero__inner">
+      <div class="typewriter">
+        <h1>Cześć, nazywam się Jędrzej!</h1>
+      </div>
+      <p class="subtitle">Web • UI/UX Developer</p>
+      <div class="hero__divider" aria-hidden="true"></div>
+    </div>
+  </main>
+
+  <!-- O mnie -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">O mnie</h2>
+      <div class="about__grid card">
+        <p class="about__text">
+          Tworzę nowoczesne, szybkie i dostępne aplikacje WWW.
+          Specjalizuję się w <strong>HTML</strong>, <strong>CSS</strong> i <strong>JavaScript</strong>.
+          Łączę estetykę z funkcjonalnością, a detale dopinam do pikselka.
         </p>
+        <div class="skills" aria-label="Technologie">
+          <i class="devicon-html5-plain colored pulse" title="HTML5" role="img" aria-label="HTML5"></i>
+          <i class="devicon-css3-plain colored pulse" title="CSS3" role="img" aria-label="CSS3"></i>
+          <i class="devicon-javascript-plain colored pulse" title="JavaScript" role="img" aria-label="JavaScript"></i>
+        </div>
+      </div>
+    <div class="about__grid card">
+        <div class="about__photo">
+            <img src="images/jedrzej.jpg" alt="Jędrzej Mikołajczak – zdjęcie profilowe">
+        </div>
+    <div class="about__info">
+    <p>
+      Jestem studentem Informatyki na <strong>Politechnice Poznańskiej</strong>.
+      Pasjonuję się <strong>frontendem i projektowaniem UI/UX</strong>, tworzę
+      nowoczesne, lekkie aplikacje webowe. Lubię łączyć technologię z estetyką.
+    </p>
+    <p>
+      Aktualnie skupiam się na <strong>JavaScript</strong> i uczę się <strong>React</strong> oraz <strong>Tailwindcss</strong>. W wolnym czasie rozwijam portfolio, tworząc oraz praktykując umiejętności JS na prostych stronach, do których kod można zobaczyć na moim githubie i eksperymentuję
+      z nowymi trendami w designie.
+    </p>
     </div>
-        <div class="skills">
-            <i class="devicon-html5-plain colored pulse"></i>
-            <i class="devicon-css3-plain colored pulse"></i>
-            <i class="devicon-javascript-plain colored pulse"></i>
-        </div>
-</div>
-
-  <!-- Sekcja Projekty -->
-<div id="projects" class="projects reveal fade-up">
-    <h1 class="section-title">Moje Projekty</h1>
-    <div class="slideshow">
-        <div class="slide active">
-            <p>Witryna sklepu w python FLASK</p>
-            <img src="images/img1.png" alt="Projekt 1">
-            <p>Integracja bazy danych z kontami, koszyk, zamówienia.</p>
-            <div class="icons-in-slider">
-                <a href="https://www.w3schools.com/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                </svg>
-            </a>
-            <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-window-plus" viewBox="0 0 16 16">
-                    <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-                    <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
-                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
-                </svg>
-            </a>
-            </div>
-        </div>
-        <div class="slide">
-            <p>Moja pierwsza strona - GALAXYPEDIA</p>
-            <img src="images/img2.png" alt="Projekt 2">
-            <p>Aplikacja webowa pobierająca dane z API i prezentująca prognozę.</p>
-            <div class="icons-in-slider">
-                <a href="https://www.w3schools.com/" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-github" viewBox="0 0 16 16">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-                </svg>
-            </a>
-            <a>
-                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi-window-plus" viewBox="0 0 16 16">
-                    <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
-                    <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
-                    <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
-                </svg>
-            </a>
-            </div>
-        </div>
-        <div class="slide">
-            <img src="img/projekt3.jpg" alt="Projekt 3">
-            <p>Nie jest idealna, lecz design bardzo mi się podoba</p>
-            
-        </div>
     </div>
-    <p id="opis-slider">Do wszystkich projektów znajduje się link do repozytorium github oraz pokazowej strony!</p>
 
-</div>
+    <section id="education" class="section education">
+        <div class="container card">
+            <h2 class="section-title">Wykształcenie</h2>
+            <ul class="edu-list">
+                <li>
+                <h3>Politechnika Poznańska</h3>
+                <p>Kierunek: Informatyka (studia inżynierskie)</p>
+                <p><em>2024 – obecnie</em></p>
+            </li>
+            <li>
+                <h3>VI Liceum Ogólnokształcące im. JJ Śniadeckich</h3>
+                <p>Profil: Matematyczno-informatyczny</p>
+                <p><em>2020 – 2024</em></p>
+            </li>
+            </ul>
+        </div>
+    </section>
+    
 
+    </div>
+  </section>
 
-  <!-- Sekcja Kontakt -->
-<div id="contact" class="contact reveal fade-right">
-    <h1 class="section-title">Kontakt</h1>
-    <p>Chcesz ze mną współpracować? Napisz do mnie!</p>
-    <a href="mailto:jedrzej.mikolajczak@gmail.com" class="contact-btn">Napisz maila</a>
-</div>
+  <!-- Projekty -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Moje Projekty</h2>
+
+      <div class="slideshow" aria-roledescription="carousel" aria-label="Karuzela projektów">
+        <button class="slide-btn prev-btn" aria-label="Poprzedni projekt" data-dir="-1">‹</button>
+
+        <div class="slides-wrapper" tabindex="0">
+          <!-- Slide 1 -->
+          <article class="slide active card" aria-hidden="false">
+            <header class="slide__head">
+              <h3>Sklep – Python Flask</h3>
+              <p class="slide__sub">Konta, koszyk, zamówienia, baza danych.</p>
+            </header>
+            <img src="images/img1.png" alt="Zrzut ekranu aplikacji sklepu (Flask)" loading="lazy" />
+            <div class="slide__actions">
+              <!-- GitHub -->
+              <a href="https://github.com/JedrzejMikolajczak/sklep-strona" class="icon-link" target="_blank" rel="noopener" aria-label="Repozytorium na GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-github" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
+                    -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                    0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82
+                    .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95
+                    .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                    0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8
+                    c0-4.42-3.58-8-8-8"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <!-- Live -->
+              <a href="https://twojadomena.pl/flask-sklep-demo" class="icon-link" target="_blank" rel="noopener" aria-label="Podgląd live projektu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-window-plus" aria-hidden="true">
+                  <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                  <path d="M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                  <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                </svg>
+                <span>Live</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Slide 2 -->
+          <article class="slide card" aria-hidden="true">
+            <header class="slide__head">
+              <h3>Galaxypedia</h3>
+              <p class="slide__sub">Aplikacja web pobierająca dane z API i prezentująca prognozy.</p>
+            </header>
+            <img src="images/img2.png" alt="Zrzut ekranu aplikacji Galaxypedia" loading="lazy" />
+            <div class="slide__actions">
+              <a href="https://github.com/JedrzejMikolajczak/galaxypedia" class="icon-link" target="_blank" rel="noopener" aria-label="Repozytorium na GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-github" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
+                    -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                    0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82
+                    .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95
+                    .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                    0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8
+                    c0-4.42-3.58-8-8-8"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://twojadomena.pl/galaxypedia" class="icon-link" target="_blank" rel="noopener" aria-label="Podgląd live projektu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-window-plus" aria-hidden="true">
+                  <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                  <path d="M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                  <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                </svg>
+                <span>Live</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Slide 3 -->
+          <article class="slide card" aria-hidden="true">
+            <header class="slide__head">
+              <h3>UI Concept</h3>
+              <p class="slide__sub">Lekka, minimalistyczna koncepcja interfejsu.</p>
+            </header>
+            <img src="images/img3.png" alt="Zrzut ekranu trzeciego projektu UI" loading="lazy" />
+            <div class="slide__actions">
+              <a href="https://github.com/JedrzejMikolajczak/galaxypedia" class="icon-link" target="_blank" rel="noopener" aria-label="Repozytorium na GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-github" aria-hidden="true">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38
+                    0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13
+                    -.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07
+                    -1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12
+                    0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82
+                    .44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95
+                    .29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2
+                    0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8
+                    c0-4.42-3.58-8-8-8"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+
+              <a href="https://twojadomena.pl/galaxypedia" class="icon-link" target="_blank" rel="noopener" aria-label="Podgląd live projektu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" class="bi-window-plus" aria-hidden="true">
+                  <path d="M2.5 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1"/>
+                  <path d="M4 5a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1m2-.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                  <path d="M0 4a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v4a.5.5 0 0 1-1 0V7H1v5a1 1 0 0 0 1 1h5.5a.5.5 0 0 1 0 1H2a2 2 0 0 1-2-2zm1 2h13V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
+                  <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0m-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5"/>
+                </svg>
+                <span>Live</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <button class="slide-btn next-btn" aria-label="Następny projekt" data-dir="1">›</button>
+        <div class="dots" role="tablist" aria-label="Nawigacja po slajdach"></div>
+      </div>
+
+      <p class="hint">Każdy projekt ma link do repozytorium oraz wersji demonstracyjnej.</p>
+    </div>
+  </section>
+
+  <!-- Kontakt -->
+  <section id="contact" class="section contact">
+    <div class="container card card--soft">
+      <h2 class="section-title">Kontakt</h2>
+      <p>Chętnie podejmę współpracę przy ciekawych projektach. Napisz do mnie!</p>
+      <a href="mailto:jedrzej.mikolajczak@gmail.com" class="btn">Napisz maila</a>
+    </div>
+  </section>
 
   <!-- Stopka -->
-<footer>
-    <p>© 2025 Jędrzej Mikołajczak. Wszelkie prawa zastrzeżone.</p>
-</footer>
-<script src="script.js"></script>
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Jędrzej Mikołajczak • Wszystkie prawa zastrzeżone</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
