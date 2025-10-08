@@ -146,3 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
     start();
   }
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const h = document.querySelector('.typewriter h1');
+  if (h) h.style.setProperty('--chars', String(h.textContent.trim().length));
+});
+
